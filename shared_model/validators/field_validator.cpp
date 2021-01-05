@@ -74,7 +74,7 @@ namespace {
 
   const RegexValidator kAccountNameValidator{"AccountName",
                                              R"#([a-z_0-9]{1,32})#"};
-  const RegexValidator kAssetNameValidator{"AssetName", R"#([a-z_0-9]{1,32})#"};
+  const RegexValidator kAssetNameValidator{"AssetName", R"#([A-Za-z_0-9]{1,90})#"};
   const RegexValidator kDomainValidator{
       "Domain",
       R"#(([a-zA-Z]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)*)#"
